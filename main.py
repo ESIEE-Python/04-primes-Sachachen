@@ -1,18 +1,35 @@
+"""je"""
 from math import sqrt
-
 #### Fonction secondaire
 
 
 def isprime(p):
 
-    # votre code ici
+    """
+    Trouve les nombres premiers
 
-    pass
+    Args: 
+        p: valeur entiere positive
+
+    Returns
+         
+    """
+
+    premier = True
+    if p == 1:
+        return False
+    for d in range (2,int(sqrt(p)+1)) :
+        if p%d==0 :
+            premier = False
+    return premier
 
 #### Fonction principale
 
 
 def main():
+    """
+    je suis pd
+    """
 
     # vos appels à la fonction secondaire ici
 
